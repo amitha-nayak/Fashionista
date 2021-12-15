@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block tags %}
+
+<section id="tags" class="text-center">
+    <h1 class="mt-5">Tags generated</h1>
+    <p>
+      Top links for the image you chose, Happy shopping!
+    </p>
+    {% for link in links %}
+    <a class="btn btn-primary" href="{{link}}" role="button">{{link}}</a>
+    {% endfor %}
+  </section>
+
+{% endblock tags %}

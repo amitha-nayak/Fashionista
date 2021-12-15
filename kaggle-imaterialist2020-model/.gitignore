@@ -1,0 +1,12 @@
+__pycache__
+tf-models/
+tf_tpu_models/
+tpu_configs/
+tools/colab/
+tools/ctpu/
+tools/data_converter/
+tools/dataset/
+tools/docker/
+tools/kubernetes/
+tools/diagnostics/
+tools/dataset_profiler/

@@ -1,0 +1,15 @@
+media/
+db.sqlite3
+kaggle-imaterialist2020-model/__pycache__
+kaggle-imaterialist2020-model/tf-models/
+kaggle-imaterialist2020-model/tf_tpu_models/
+kaggle-imaterialist2020-model/tpu_configs/
+kaggle-imaterialist2020-model/tools/colab/
+kaggle-imaterialist2020-model/tools/ctpu/
+kaggle-imaterialist2020-model/tools/data_converter/
+kaggle-imaterialist2020-model/tools/dataset/
+kaggle-imaterialist2020-model/tools/docker/
+kaggle-imaterialist2020-model/tools/kubernetes/
+kaggle-imaterialist2020-model/tools/diagnostics/
+kaggle-imaterialist2020-model/tools/dataset_profiler/
+

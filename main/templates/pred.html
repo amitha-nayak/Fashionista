@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block pred %}
+
+<section id="predictions">
+    <h1 class="h">Your predictions are</h1>
+    <form action="pred" method="post">
+    <p>
+    <br><br>
+      <h2>Major Classes</h2>
+      <div class="btn-group">
+        <input
+  type="radio"
+  class="btn-check"
+  name="options"
+  id="option1"
+  autocomplete="off"
+  checked
+/>  
+        {% for sing in major %}
+            <input type="radio" class="btn-check" name="options1" id="{{sing}}" value="{{sing}}" autocomplete="off" />
+            <label class="btn btn-primary" for="{{sing}}">{{ sing }}</label>
+        {% endfor %}
+      </div>
+      <br><br>
+      <h2>Minor Attributes</h2>
+      <div class="bs-example">
+      {% for mult in minor %}
+      <span class="icon-input-btn">
+        <input type="checkbox" class="btn-check" name="options2" id="{{mult}}" value="{{mult}}" autocomplete="off" />
+        <label class="btn btn-outline-secondary" for="{{mult}}">{{ mult }}</label>
+      </span>
+      {% endfor %}<br><br>
+
+      <button type="submit" class="btn btn-primary" name="submit">Find recommendations</button>
+    <div>
+    </p>
+    </form>
+  </section>
+
+{% endblock pred %}
